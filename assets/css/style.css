@@ -2,10 +2,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo {
+    background-image: url('../img/cover_header.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo img {
+    width: 100px;
+    margin: 5px 0 5px 5px;
+}
+
+.trailer {
+    justify-content: center;
+    
 }
 
 h1 {
@@ -96,6 +114,20 @@ a {
 .sidebar {
     border-right: solid 1px #cdcdcd;
     margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.anchors > ul,
+.sidebar > ul {
+    padding-left: 0;
+    font: normal 14px "Poppins", sans-serif;
+}
+
+.anchors > ul li,
+.sidebar > ul li{
+    padding: 0 5px 10px 0;
 }
 
 figure {
