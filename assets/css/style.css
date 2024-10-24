@@ -25,69 +25,31 @@ body, html {
     position: relative;
 }
 
-.picture {
+/* Imagem e legenda da Seção Introdução */
+.picture-capa {
     float: right; /* Faz a imagem flutuar à direita do texto */
     margin-left: 20px; /* Adiciona espaço entre a imagem e o texto à esquerda */
     max-width: 300px; /* Define uma largura máxima para a imagem */
     height: auto; /* Mantém a proporção da imagem */
 }
 
-.picture-gameplay {
-    float: left; /* Faz a imagem flutuar à direita do texto */
-    margin-left: 20px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 300px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.picture-personagens img {
-    float: left; /* Faz a imagem flutuar à direita do texto */
-    margin-right: 20px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 400px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.picture img {
+.picture-capa img {
     width: 100%; /* Garante que a imagem ocupe a largura máxima definida pelo contêiner */
     height: auto;
-}
-
-.picture-gameplay img {
-    width: 100%; /* Garante que a imagem ocupe a largura máxima definida pelo contêiner */
-    height: auto;
-    padding-right: 5px;
-}
-
-/* Imagens da seção de itens */
-.picture-itens {
-    float: right; /* Faz a imagem flutuar à direita do texto */
-    margin: 0 0 10px 30px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 150px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.picture-itens img {
-    width: 100%; /* Garante que a imagem ocupe a largura máxima definida pelo contêiner */
-    height: auto;
-}
-
-.picture-itens:nth-child(2) img {
-    float: left; /* Faz a imagem flutuar à esquerda do texto */
-    margin: 0 10px 0 30px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 150px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.picture figcaption {
-    font-size: 0.9em; /* Tamanho da legenda */
-    color: #555; /* Cor da legenda */
-    margin: -2px 0 15px 0; /* Espaçamento entre a imagem e a legenda */
-    text-align: center; /* Centraliza a legenda abaixo da imagem */
 }
 
 .introducao hr {
     clear: both;
 }
 
+.picture-capa figcaption {
+    font-size: 0.9em; /* Tamanho da legenda */
+    color: #555; /* Cor da legenda */
+    margin: -2px 0 15px 0; /* Espaçamento entre a imagem e a legenda */
+    text-align: center; /* Centraliza a legenda abaixo da imagem */
+}
+
+/* Configuração do Trailer */
 .trailer {
     text-align: center;
     font-size: 20px;
@@ -104,6 +66,57 @@ iframe {
     padding: 0;
     margin: -10px 0 15px 0;
 }
+
+/* Imagens da Seção de Jogabilidade */
+.picture-gameplay {
+    float: right; /* Faz a imagem flutuar à direita do texto */
+    margin-left: 20px; /* Adiciona espaço entre a imagem e o texto à esquerda */
+    max-width: 300px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.picture-gameplay img {
+    width: 100%; /* Garante que a imagem ocupe a largura máxima definida pelo contêiner */
+    height: auto;
+    padding-right: 5px;
+}
+
+.picture-gameplay:nth-of-type(2) {
+    float: left; /* Faz a imagem flutuar à direita do texto */
+    margin: 0 15px 0 20px; /* Adiciona espaço entre a imagem e o texto à esquerda */
+    max-width: 300px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Imagem da Seção de Personagens */
+.picture-personagens img {
+    float: left; /* Faz a imagem flutuar à direita do texto */
+    padding-left: 30px;
+    margin-right: 15px; /* Adiciona espaço entre a imagem e o texto à esquerda */
+    max-width: 400px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Imagens da seção de itens */
+.picture-itens {
+    float: right; /* Faz a imagem flutuar à direita do texto */
+    margin: 0 0 10px 30px; /* Adiciona espaço entre a imagem e o texto à esquerda */
+    max-width: 150px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.picture-itens img {
+    width: 100%; /* Garante que a imagem ocupe a largura máxima definida pelo contêiner */
+    height: auto;
+}
+
+ul .picture-itens {
+    float: left; /* Faz a imagem flutuar à esquerda do texto */
+    margin: 5px 30px 5px 30px; /* Adiciona espaço entre a imagem e o texto à esquerda */
+    max-width: 150px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
 
 h1 {
     font-family: "Merriweather", serif; /* Define a fonte */
