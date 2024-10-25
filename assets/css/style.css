@@ -4,7 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
@@ -90,16 +91,16 @@ iframe {
 
 /* Imagem da Seção de Personagens */
 .picture-personagens img {
-    float: left; /* Faz a imagem flutuar à direita do texto */
+    float: left; /* Faz a imagem flutuar à esquerda do texto */
     padding-left: 30px;
     margin-right: 15px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 400px; /* Define uma largura máxima para a imagem */
+    max-width: 400px; /* Mantém a proporção da imagem */
     height: auto; /* Mantém a proporção da imagem */
 }
 
 /* Imagens da seção de itens */
 .picture-itens {
-    float: right; /* Faz a imagem flutuar à direita do texto */
+    float: right;/* Faz a imagem flutuar à direita do texto */ 
     margin: 0 0 10px 30px; /* Adiciona espaço entre a imagem e o texto à esquerda */
     max-width: 150px; /* Define uma largura máxima para a imagem */
     height: auto; /* Mantém a proporção da imagem */
@@ -118,7 +119,6 @@ ul .picture-itens {
 }
 
 /* Seção de imagens do mundo */
-
 .picture-mundo {
     display: flex;
     justify-content: space-evenly;
@@ -136,11 +136,11 @@ h1 {
     margin: 20px 0 20px 0; /* Define a margem superior e inferior */
     position: relative; /* Permite o posicionamento relativo do elemento, se necessário */
     color: rgb(0, 0, 0); /* Cor da fonte */
-    text-shadow: 
-        -1px -1px 0 white,  
+    text-shadow: /* Contorno branco */
+        -1px -1px 0 white,
         1px -1px 0 white,
         -1px 1px 0 white,
-        1px 1px 0 white; /* Contorno branco */
+        1px 1px 0 white;
 }
 
 .title {
@@ -153,7 +153,8 @@ h1 {
     font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 10px;
 }
@@ -166,12 +167,12 @@ p {
     text-align: justify;
 }
 
-ul { 
-    list-style: none; 
-    padding-left: 35px; 
+ul {
+    list-style: none;
+    padding-left: 35px;
 }
 
-.main > ul > li {
+.main>ul>li {
     list-style: square;
     margin-left: 30px;
 }
@@ -180,13 +181,14 @@ ul {
     padding-bottom: 50px;
 }
 
-a { 
-    color:blue; text-decoration: none;
+a {
+    color: blue;
+    text-decoration: none;
 }
 
 .bar {
     background-color: #f9f9fb;
-    padding:15px;
+    padding: 15px;
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
 }
@@ -198,7 +200,7 @@ a {
     display: grid;
     gap: 3rem;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -207,9 +209,12 @@ a {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
     display: flex;
-    flex-direction: column; /* Alinhamento dos itens em coluna */
-    justify-content: center; /* Centraliza verticalmente */
-    align-items: center;     /* Centraliza horizontalmente */
+    flex-direction: column;
+    /* Alinhamento dos itens em coluna */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    align-items: center;
+    /* Centraliza horizontalmente */
     height: 100px;
 }
 
@@ -233,14 +238,14 @@ a {
     font-style: normal;
 }
 
-.anchors > ul,
-.sidebar > ul {
+.anchors>ul,
+.sidebar>ul {
     padding-left: 0;
     font: normal 14px "Poppins", sans-serif;
 }
 
-.anchors > ul li,
-.sidebar > ul li{
+.anchors>ul li,
+.sidebar>ul li {
     padding: 0 5px 10px 0;
 }
 
