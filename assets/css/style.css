@@ -1,9 +1,9 @@
+/* Importação de fontes */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+/* Estilos globais */
 body,
 html {
     margin: 0;
@@ -11,146 +11,14 @@ html {
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
 }
 
-.logo {
-    background-image: url('../img/cover_header.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.logo img {
-    width: 100px;
-    margin: 5px 0 5px 5px;
-}
-
-.introducao {
-    position: relative;
-}
-
-/* Imagem e legenda da Seção Introdução */
-.picture-capa {
-    float: right; /* Faz a imagem flutuar à direita do texto */
-    margin-left: 20px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 300px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.picture-capa img {
-    width: 100%; /* Garante que a imagem ocupe a largura máxima definida pelo contêiner */
-    height: auto;
-}
-
-.introducao hr {
-    clear: both;
-}
-
-.picture-capa figcaption {
-    font-size: 0.9em; /* Tamanho da legenda */
-    color: #555; /* Cor da legenda */
-    margin: -2px 0 15px 0; /* Espaçamento entre a imagem e a legenda */
-    text-align: center; /* Centraliza a legenda abaixo da imagem */
-}
-
-/* Configuração do Trailer */
-.trailer {
-    text-align: center;
-    font-size: 20px;
-}
-
-iframe {
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 15px;
-}
-
-.trailer-legenda {
-    text-align: center;
-    padding: 0;
-    margin: -10px 0 15px 0;
-}
-
-/* Imagens da Seção de Jogabilidade */
-.picture-gameplay {
-    float: right; /* Faz a imagem flutuar à direita do texto */
-    margin-left: 20px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 300px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.picture-gameplay img {
-    width: 100%; /* Garante que a imagem ocupe a largura máxima definida pelo contêiner */
-    height: auto;
-    padding-right: 5px;
-}
-
-.picture-gameplay:nth-of-type(2) {
-    float: left; /* Faz a imagem flutuar à direita do texto */
-    margin: 0 15px 0 28px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 300px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Imagem da Seção de Personagens */
-.picture-personagens img {
-    float: left; /* Faz a imagem flutuar à esquerda do texto */
-    padding-left: 30px;
-    margin-right: 15px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 400px; /* Mantém a proporção da imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Imagens da seção de itens */
-.picture-itens {
-    float: right;/* Faz a imagem flutuar à direita do texto */ 
-    margin: 0 0 10px 30px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 150px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-.picture-itens img {
-    width: 100%; /* Garante que a imagem ocupe a largura máxima definida pelo contêiner */
-    height: auto;
-}
-
-ul .picture-itens {
-    float: left; /* Faz a imagem flutuar à esquerda do texto */
-    margin: 5px 30px 5px 30px; /* Adiciona espaço entre a imagem e o texto à esquerda */
-    max-width: 150px; /* Define uma largura máxima para a imagem */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-/* Seção de imagens do mundo */
-.picture-mundo {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.picture-mundo picture img {
-    max-height: 200px;
-    margin-bottom: 10px;
-}
-
 h1 {
-    font-family: "Merriweather", serif; /* Define a fonte */
-    font-weight: 900; /* Define o peso da fonte como negrito */
-    font-style: normal; /* Define o estilo da fonte como normal (não itálico) */
-    margin: 20px 0 20px 0; /* Define a margem superior e inferior */
-    position: relative; /* Permite o posicionamento relativo do elemento, se necessário */
-    color: rgb(0, 0, 0); /* Cor da fonte */
-    text-shadow: /* Contorno branco */
-        -1px -1px 0 white,
-        1px -1px 0 white,
-        -1px 1px 0 white,
-        1px 1px 0 white;
-}
-
-.title {
-    background-image: url('../img/z_oot/banner_oot.jpg'); /* Substitua pelo caminho da sua imagem */
-    background-size: cover; /* Faz com que a imagem cubra todo o espaço */
-    background-position: center; /* Centraliza a imagem */
-    text-align: center; /* Centraliza o texto */
-    padding: 20px; /* Espaçamento interno */
-    margin-top: 10px; /* Remove a margem padrão */
-    font-size: 2em; /* Ajuste o tamanho da fonte conforme necessário */
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: normal;
+    margin: 20px 0;
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
 
 h2,
@@ -167,6 +35,7 @@ p {
     text-align: justify;
 }
 
+/* Estilos de lista */
 ul {
     list-style: none;
     padding-left: 35px;
@@ -177,45 +46,143 @@ ul {
     margin-left: 30px;
 }
 
-.main.main {
-    padding-bottom: 50px;
+/* Estilos de logo e título */
+.logo {
+    background-image: url('../img/cover_header.jpg');
+    display: flex;
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Impede a repetição da imagem */
+    background-size: auto; /* Mantém o tamanho original da imagem */
+    height: 100%; /* Define uma altura específica para o elemento */
+    width: 100%; /* Define a largura total do elemento */
+    overflow: hidden; /* Oculta partes da imagem que excedem a seção */
 }
 
-a {
-    color: blue;
-    text-decoration: none;
+span {
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+    font: 700 80px 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
+    margin-left: 10px;
 }
 
-.bar {
-    background-color: #f9f9fb;
-    padding: 15px;
-    border-top: solid 1px #cdcdcd;
-    border-bottom: solid 1px #cdcdcd;
+.logo img {
+    width: 100px;
+    margin: 5px 0 5px 5px;
 }
 
-.content {
-    max-width: 1440px;
-    margin: auto;
-    grid-gap: 3rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+.title {
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px;
+    text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
+    font-size: 2em;
 }
 
+.banner_oot {
+    background-image: url(../img/z_oot/banner_oot.jpg);
+    background-position: center;
+}
+
+.banner_mm {
+    background-image: url(../img/z_mm/banner_mm.jpg);
+    background-position: center;
+}
+
+/* Seção de introdução */
+.introducao {
+    position: relative;
+}
+
+.introducao hr {
+    clear: both;
+}
+
+/* Estilos para imagens e legendas */
+.picture-capa,
+.picture-gameplay,
+.picture-itens {
+    margin-left: 20px;
+    max-width: 300px;
+    height: auto;
+    float: right;
+}
+
+.picture-capa img,
+.picture-gameplay img {
+    width: 100%;
+    height: auto;
+}
+
+.picture-itens img {
+    width: 150px;
+    height: auto;
+}
+
+.picture-capa figcaption,
+.picture-gameplay figcaption,
+.picture-itens figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin: -2px 0 15px 0;
+    text-align: center;
+}
+
+/* Ajuste para a seção de gameplay */
+.picture-gameplay:nth-of-type(2) {
+    float: left;
+    margin: 0 15px 0 28px;
+}
+
+/* Seção de personagens */
+.picture-personagens img {
+    float: left;
+    padding-left: 30px;
+    margin-right: 15px;
+    max-width: 400px;
+    height: auto;
+}
+
+/* Seção do mundo */
+.picture-mundo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.picture-mundo picture img {
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+/* Seção de trailer */
+.trailer {
+    text-align: center;
+    font-size: 20px;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 15px;
+}
+
+.trailer-legenda {
+    text-align: center;
+    margin: -10px 0 15px 0;
+}
+
+/* Rodapé */
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
     display: flex;
     flex-direction: column;
-    /* Alinhamento dos itens em coluna */
     justify-content: center;
-    /* Centraliza verticalmente */
     align-items: center;
-    /* Centraliza horizontalmente */
     height: 100px;
+    background-image: url('../img/cover_header.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .footer p {
@@ -224,18 +191,50 @@ a {
     color: #efefef;
 }
 
+/* Container principal */
+.content {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(15rem) 1fr minmax(0, 15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 20px; /* Adiciona um espaço entre as colunas para evitar sobreposição */
+}
+
+/* Barra lateral e âncoras */
+.sidebar,
 .anchors {
-    border-left: solid 1px #cdcdcd;
     padding-left: 15px;
     margin-top: 20px;
 }
 
 .sidebar {
     border-right: solid 1px #cdcdcd;
+    position: sticky; /* Permite que a sidebar fique "fixa" ao rolar */
+    top: 20px; /* Define a posição inicial para a sidebar em relação ao topo */
+    right: 0; /* Alinha a sidebar à direita da tela */
+    width: 200px; /* Define uma largura fixa */
     margin-top: 20px;
+    padding-right: 15px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    overflow-x: hidden; /* Esconde o conteúdo que ultrapassa a largura quando redimensionado */
+}
+
+/* Seção anchors */
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    position: sticky;
+    top: 10px;
+    height: 100vh;
+    padding-left: 15px; /* Adiciona padding para afastar o conteúdo da borda */
+    margin-left: 10px; /* Adiciona margem para evitar que invada a seção main */
+    min-width: 200px; /* Define um tamanho mínimo fixo para a seção */
+    overflow-x: auto; /* Habilita a rolagem horizontal se o conteúdo ultrapassar a largura */
+    white-space: nowrap; /* Impede que o texto quebre para a linha seguinte */
 }
 
 .anchors>ul,
@@ -249,12 +248,27 @@ a {
     padding: 0 5px 10px 0;
 }
 
-figure {
-    text-align: center;
+/* Classes utilitárias */
+a {
+    color: blue;
+    text-decoration: none;
 }
 
-.footer {
-    background-image: url('../img/cover_header.jpg');
-    background-size: cover;
-    background-position: center;
+.bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+/* Seção principal */
+.main {
+    padding: 30px;
+    min-width: 600px;
+    background-color: #f9f9fb; /* Exemplo de cor para visualização */
+}
+
+/* Estilos para figuras */
+figure {
+    text-align: center;
 }
