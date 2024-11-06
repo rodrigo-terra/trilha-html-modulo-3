@@ -89,6 +89,16 @@ span {
     background-position: center;
 }
 
+.banner_ww {
+    background-image: url(../img/z_ww/banner_ww.jpg);
+    background-position: center;
+}
+
+.capa_game {
+    max-height: 300px;
+    width: auto;
+}
+
 /* Seção de introdução */
 .introducao {
     position: relative;
