@@ -94,6 +94,11 @@ span {
     background-position: center;
 }
 
+.banner_tp {
+    background-image: url(../img/z_tp/banner_tp.jpg);
+    background-position: center;
+}
+
 .capa_game {
     max-height: 300px;
     width: auto;
