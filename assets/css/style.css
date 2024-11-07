@@ -77,6 +77,24 @@ span {
     margin-top: 10px;
     text-shadow: -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white, 2px 2px 0 white;
     font-size: 2em;
+    
+}
+
+.main .banner_oot a,
+.main .banner_mm a,
+.main .banner_ww a,
+.main .banner_tp a,
+.main .banner_ss a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.main .banner_oot a:hover,
+.main .banner_mm a:hover,
+.main .banner_ww a:hover,
+.main .banner_tp a:hover,
+.main .banner_ss a:hover {
+    color: gray; 
 }
 
 .banner_oot {
@@ -96,6 +114,11 @@ span {
 
 .banner_tp {
     background-image: url(../img/z_tp/banner_tp.jpg);
+    background-position: center;
+}
+
+.banner_ss {
+    background-image: url(../img/z_ss/banner_ss.jpg);
     background-position: center;
 }
 
